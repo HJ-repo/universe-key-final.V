@@ -73,7 +73,7 @@ body {
     }
   
     button {
-      /*width: auto;*/
+      width: auto;
       padding: 4vw 6vw; /* 버튼 크기 모바일에 맞게 확대 */
       font-size: 3vw; /* 모바일에서도 버튼 텍스트 크기 비례 조정 */
     }
