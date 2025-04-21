@@ -51,6 +51,11 @@ body {
       font-size: 10vw; /* 모바일에서 글자 크기 작게 */
       padding: auto; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
     }
+
+    h1 {
+      font-size: 10vw; /* 모바일에서 헤더 크기 조정 */
+      margin-bottom: 2vw;
+    }
   
     .p1 {
       font-size: 4vw; /* 모바일에서 p1 텍스트 크기 축소 */
@@ -68,9 +73,9 @@ body {
     }
   
     button {
-      width: auto;
+      /*width: auto;*/
       padding: 4vw 6vw; /* 버튼 크기 모바일에 맞게 확대 */
-      font-size: 4vw; /* 모바일에서도 버튼 텍스트 크기 비례 조정 */
+      font-size: 3vw; /* 모바일에서도 버튼 텍스트 크기 비례 조정 */
     }
   
     #moodButtons,
@@ -79,12 +84,20 @@ body {
     #personalityButtons {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      gap: 3vw;
       max-width: 100%;
-      margin: 20px auto;
+      margin: 5vw auto;
       justify-items: center;
     }
   
+    #moodButtons button,
+    #colorButtons button,
+    #valueButtons button,
+    #personalityButtons button {
+      /*width: 40vw;*/
+      font-size: 2.5vw;
+      padding: 3vw;
+    }
     
   }
 
