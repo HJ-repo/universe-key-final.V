@@ -35,6 +35,9 @@ function goToScreen(number) {
         localStorage.setItem("userImage", e.target.result); // Data URL 저장
         localStorage.setItem("userName", userName);
         localStorage.setItem("userMood", mood);
+        localStorage.setItem("userColor", color);
+        localStorage.setItem("userValue", value);
+        localStorage.setItem("userPersonality", pers);
         moveToArtPage();
       };
       reader.readAsDataURL(file);
@@ -56,12 +59,6 @@ function goToScreen(number) {
   }
   //~
 
-    /*
-    // 2초 후 결과 화면으로 (예: 아트 페이지로 이동)
-    setTimeout(() => {
-      window.location.href = "web_art.html";
-    }, 2000);
-    */
   
 }
 
