@@ -48,7 +48,7 @@ body {
 
   @media (max-width: 768px) {
     body {
-      font-size: 5%; /* 모바일에서 글자 크기 작게 */
+      font-size: 20%; /* 모바일에서 글자 크기 작게 */
       padding: auto; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
     }
   
@@ -61,8 +61,9 @@ body {
     }
   
     button {
-      width: 70%; /* 버튼 크기 모바일에 맞게 확대 */
-      padding: auto;
+      width: auto;
+      padding: 4vw 6vw; /* 버튼 크기 모바일에 맞게 확대 */
+      font-size: 4vw; /* 모바일에서도 버튼 텍스트 크기 비례 조정 */
     }
   
     #moodButtons,
@@ -174,5 +175,3 @@ body {
   .color-purple { background-color: #9370DB; }
   .color-black { background-color: #000000; }
   .color-white { background-color: #fff; color: #163557; border: 1px solid #aaa; }
-
-  
