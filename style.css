@@ -83,22 +83,27 @@ body {
     #colorButtons,
     #valueButtons,
     #personalityButtons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3vw;
-      max-width: 100%;
-      margin: 5% auto;
-      justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 항상 3칸 */
+    gap: 3vw;
+    justify-content: center; /* 🔥 그리드 전체를 중앙으로 */
+    justify-items: center;   /* 🔥 셀 안의 버튼도 중앙으로 */
+    margin: 5% auto;
+    width: 100%;             /* 🔥 화면 너비 기준으로 */
+    max-width: 600px;        /* 너무 넓어지지 않도록 제한 */
     }
-  
+
+/* 버튼 스타일 */
     #moodButtons button,
     #colorButtons button,
     #valueButtons button,
     #personalityButtons button {
-      width: 80%;
-      font-size: 2.5vw;
-      padding: 3vw;
-      justify-items: center;
+    font-size: 2.5vw;
+    padding: 3vw;
+    width: 100%;       /* 🔥 그리드 셀 너비에 맞춤 */
+    max-width: 100px;  /* 너무 커지지 않도록 제한 */
+    box-sizing: border-box;
+    text-align: center;
     }
     
   }
