@@ -1,10 +1,32 @@
 body {
   text-align: center;
   padding: 50px;
-  background-color: #F9FCFF;
+  background-color: #F2F7FF;
   font-family: 'Outfit',sans-serif;
   font-weight: 900;
   font-size: 50px;
+  }
+  
+  #screen1 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* 뒤로 보내기 */
+  pointer-events: none; /* 클릭 방해 안 되도록 */
+}
+  
+  #screen1 h1,
+  #screen1 p,
+  #screen1 button {
+    position: relative;
+    z-index: 1;
   }
   
   .p1{
@@ -47,7 +69,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width <= 768px) {
     body {
       font-size: 10vw; /* 모바일에서 글자 크기 작게 */
       padding: auto; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
