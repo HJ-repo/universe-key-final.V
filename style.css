@@ -61,8 +61,8 @@ body {
     }
   
     button {
-      width: 80%; /* 버튼 크기 모바일에 맞게 확대 */
-      padding: 3vw 5vw;
+      width: 70%; /* 버튼 크기 모바일에 맞게 확대 */
+      padding: auto;
     }
   
     #moodButtons,
