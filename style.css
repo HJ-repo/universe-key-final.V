@@ -48,7 +48,7 @@ body {
 
   @media (max-width: 768px) {
     body {
-      font-size: 20%; /* 모바일에서 글자 크기 작게 */
+      font-size: 1vw; /* 모바일에서 글자 크기 작게 */
       padding: auto; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
     }
   
