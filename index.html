@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Universe Key</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="screen1" class="screen">
+    <h1>Universe key</h1>
+    <p class="p1">- 나만의 우주를 띄우다 -</p>
+    <button onclick="goToScreen(2)">START</button>
+  </div>
+
+  <div id="screen2" class="screen hidden">
+    <div class="progress">1/6</div>
+    <p class="p2">당신의 이름은 무엇인가요?</p>
+    <input type="text" id="username">
+    <button onclick="goToScreen(3)">→</button>
+  </div>
+
+  <div id="screen3" class="screen hidden">
+    <div class="progress">2/6</div>
+    <p class="p2">오늘 당신의 기분은 어떤가요?</p>
+    <div id="moodButtons">
+      <button onclick="selectMood('행복', this)">행복</button>
+      <button onclick="selectMood('신남', this)">신남</button>
+      <button onclick="selectMood('좋음', this)">좋음</button>
+      <button onclick="selectMood('보통', this)">보통</button>
+      <button onclick="selectMood('우울', this)">우울</button>
+      <button onclick="selectMood('피곤', this)">피곤</button>
+      <button onclick="selectMood('짜증', this)">짜증</button>
+      <button onclick="selectMood('슬픔', this)">슬픔</button>
+      <button onclick="selectMood('불안', this)">불안</button>
+      <!-- 더 추가 가능 -->
+    </div>
+    <button onclick="goToScreen(4)">→</button>
+  </div>
+
+  <div id="screen4" class="screen hidden">
+    <div class="progress">3/6</div>
+    <p class="p2">좋아하는 색은 무엇인가요?</p>
+    <div id="colorButtons">
+      <button class="color-red" onclick="selectColor('빨강', this)">빨강</button>
+      <button class="color-pink" onclick="selectColor('분홍', this)">분홍</button>
+      <button class="color-orange" onclick="selectColor('주황', this)">주황</button>
+      <button class="color-yellow" onclick="selectColor('노랑', this)">노랑</button>
+      <button class="color-lightgreen" onclick="selectColor('연두', this)">연두</button>
+      <button class="color-green" onclick="selectColor('초록', this)">초록</button>
+      <button class="color-blue" onclick="selectColor('파랑', this)">파랑</button>
+      <button class="color-lightblue" onclick="selectColor('하늘색', this)">하늘색</button>
+      <button class="color-navy" onclick="selectColor('남색', this)">남색</button>
+      <button class="color-purple" onclick="selectColor('보라', this)">보라</button>
+      <button class="color-black" onclick="selectColor('검정', this)">검정</button>
+      <button class="color-white" onclick="selectColor('흰색', this)">흰색</button>
+      <!-- 더 추가 가능 -->
+    </div>
+    <button onclick="goToScreen(5)">→</button>
+  </div>
+
+  <div id="screen5" class="screen hidden">
+    <div class="progress">4/6</div>
+    <p class="p2">당신이 가장 중요하게 생각하는 가치 한 가지는 무엇인가요?</p2>
+    <div id="valueButtons">
+      <button onclick="selectValue('자신', this)">자신</button>
+      <button onclick="selectValue('가족', this)">가족</button>
+      <button onclick="selectValue('사랑', this)">사랑</button>
+      <button onclick="selectValue('우정', this)">우정</button>
+      <button onclick="selectValue('지식', this)">지식</button>
+      <button onclick="selectValue('행복', this)">행복</button>
+      <button onclick="selectValue('자유', this)">자유</button>
+      <button onclick="selectValue('건강', this)">건강</button>
+      <button onclick="selectValue('신뢰', this)">신뢰</button>
+      <!-- 더 추가 가능 -->
+    </div>
+    <button onclick="goToScreen(6)">→</button>
+  </div>
+
+  <div id="screen6" class="screen hidden">
+    <div class="progress">5/6</div>
+    <p class="p2">당신의 성격을 가장 잘 나타내는 한 단어는 무엇인가요?</p2>
+    <div id="personalityButtons">
+      <button onclick="selectPers('열정적인', this)">열정적인</button>
+      <button onclick="selectPers('다정한', this)">다정한</button>
+      <button onclick="selectPers('창의적인', this)">창의적인</button>
+      <button onclick="selectPers('차분한', this)">차분한</button>
+      <button onclick="selectPers('친절한', this)">친절한</button>
+      <button onclick="selectPers('도전적인', this)">도전적인</button>
+      <button onclick="selectPers('낙천적인', this)">낙천적인</button>
+      <button onclick="selectPers('완벽주의적인', this)">완벽주의적인</button>
+      <button onclick="selectPers('자유로운', this)">자유로운</button>
+      <!-- 더 추가 가능 -->
+    </div>
+    <button onclick="goToScreen(7)">→</button>
+  </div>
+
+  <div id="screen7" class="screen hidden">
+    <div class="progress">6/6</div>
+    <p class="p2">당신의 우주에 추가하고 싶은 이미지를 넣어주세요</p>
+    <input type="file" id="userImage" accept="image/*" >
+    <button onclick="goToScreen(8)">→</button>
+  </div>
+
+  <div id="screen8" class="screen hidden">
+    <p class="p1">생성중...</p>
+    <div class="spinner"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

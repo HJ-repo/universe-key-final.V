@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Own Universe</title>
+  <style>
+    body { margin: 0; overflow: hidden; background-color: black; }
+    #webgl-container { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="webgl-container"></div>
+
+  <script type="module">
+    import App from './web_art.js';
+    window.addEventListener("DOMContentLoaded", () => {
+      new App();
+    });
+  </script>
+</body>
+</html>
