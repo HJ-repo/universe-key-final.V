@@ -199,7 +199,7 @@ class App {
     const deltaY = touch.clientY - this._previousMousePosition.y;
 
     this._rotation.y -= deltaX * 0.005;
-    this._rotation.x -= deltaY * 0.005;
+    this._rotation.x += deltaY * 0.005;
 
     this._rotation.x = Math.max(-Math.PI / 2 + 0.1, Math.min(Math.PI / 2 - 0.1, this._rotation.x));
     this._updateCameraPosition();
