@@ -48,8 +48,8 @@ body {
 
   @media (max-width: 768px) {
     body {
-      font-size: 5%; /* 모바일에서 글자 크기 작게 */
-      padding: 5vw; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
+      font-size: 10%; /* 모바일에서 글자 크기 작게 */
+      padding: auto; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
     }
   
     .p1 {
@@ -62,8 +62,7 @@ body {
   
     button {
       width: auto; /* 버튼 크기 모바일에 맞게 확대 */
-      padding: 4vw 6vw;
-      font-size: 4vw;
+      padding: 3vw 5vw;
     }
   
     #moodButtons,
