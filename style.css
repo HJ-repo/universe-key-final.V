@@ -76,6 +76,7 @@ body {
       width: auto;
       padding: 4vw 6vw; /* 버튼 크기 모바일에 맞게 확대 */
       font-size: 3vw; /* 모바일에서도 버튼 텍스트 크기 비례 조정 */
+      justify-items: center;
     }
   
     #moodButtons,
@@ -86,7 +87,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
       gap: 3vw;
       max-width: 100%;
-      margin: 5vw auto;
+      margin: 5% auto;
       justify-items: center;
     }
   
@@ -97,6 +98,7 @@ body {
       width: 80%;
       font-size: 2.5vw;
       padding: 3vw;
+      justify-items: center;
     }
     
   }
