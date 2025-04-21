@@ -46,6 +46,45 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
+  @media (max-width: 768px) {
+    body {
+      font-size: 40px; /* 모바일에서 글자 크기 작게 */
+      padding: 20px; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
+    }
+  
+    .p1 {
+      font-size: 18px; /* 모바일에서 p1 텍스트 크기 축소 */
+    }
+  
+    .p2 {
+      font-size: 16px; /* 모바일에서 p2 텍스트 크기 축소 */
+    }
+  
+    button {
+      width: 80%; /* 버튼 크기 모바일에 맞게 확대 */
+      padding: 15px;
+    }
+  
+    #moodButtons,
+    #colorButtons,
+    #valueButtons,
+    #personalityButtons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 100%;
+      margin: 20px auto;
+      justify-items: center;
+    }
+  
+    #moodButtons button,
+    #colorButtons button,
+    #valueButtons button,
+    #personalityButtons button {
+      width: 80%; /* 모바일에서 버튼 크기 확대 */
+    }
+  }
+  
   #moodButtons,
   #colorButtons,
   #valueButtons,
