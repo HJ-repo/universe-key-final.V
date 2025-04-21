@@ -12,20 +12,20 @@
   <div id="screen1" class="screen">
     <canvas id="particleCanvas"></canvas> 
     <h1>Universe key</h1>
-    <p class="p1">나만의 우주를 태그하다</p>
+    <p class="p1">나만의 우주를 태그하다</p1>
     <button class="nextButton" onclick="goToScreen(2)">START</button>
   </div>
 
   <div id="screen2" class="screen hidden">
     <div class="progress">1/6</div>
-    <p class="p2">당신의 이름은 무엇인가요?</p>
+    <p class="p2">당신의 이름은 무엇인가요?</p2><br><br><br>
     <input type="text" id="username">
     <button class="nextButton" onclick="goToScreen(3)">→</button>
   </div>
 
   <div id="screen3" class="screen hidden">
     <div class="progress">2/6</div>
-    <p class="p2">오늘 당신의 기분은 어떤가요?</p>
+    <p class="p2">오늘 당신의 기분은 어떤가요?</p2>
     <div id="moodButtons">
       <button onclick="selectMood('행복', this)">행복</button>
       <button onclick="selectMood('신남', this)">신남</button>
@@ -43,7 +43,7 @@
 
   <div id="screen4" class="screen hidden">
     <div class="progress">3/6</div>
-    <p class="p2">좋아하는 색은 무엇인가요?</p>
+    <p class="p2">좋아하는 색은 무엇인가요?</p2>
     <div id="colorButtons">
       <button class="color-red" onclick="selectColor('빨강', this)">빨강</button>
       <button class="color-pink" onclick="selectColor('분홍', this)">분홍</button>
@@ -100,13 +100,13 @@
 
   <div id="screen7" class="screen hidden">
     <div class="progress">6/6</div>
-    <p class="p2">당신의 우주에 추가하고 싶은 이미지를 넣어주세요</p>
+    <p class="p2">당신의 우주에 추가하고 싶은 이미지를 넣어주세요</p2><br><br><br>
     <input type="file" id="userImage" accept="image/*" >
     <button class="nextButton" onclick="goToScreen(8)">→</button>
   </div>
 
   <div id="screen8" class="screen hidden">
-    <p class="p1">생성중...</p>
+    <p class="p1">생성중...</p1>
     <div class="spinner"></div>
   </div>
 

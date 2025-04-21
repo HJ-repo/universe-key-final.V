@@ -7,6 +7,45 @@ body {
   font-size: 50px;
   }
   
+
+
+  .nextButton {
+    padding: 10px 20px;
+    background-color: #163557;
+    color: white;
+    font-size: 16px ;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Noto Sans Korean', sans-serif;
+    transition: all 0.2s ease;
+  }
+  
+  /* screen1 전용 - p1 밑 중앙 정렬 */
+  #screen1 .nextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto 0 auto;
+    font-size: 16px;
+    width: fit-content;
+    position: static;
+  }
+  
+  /* screen2~6 공통 - 하단 중앙 고정 */
+  #screen2 .nextButton,
+  #screen3 .nextButton,
+  #screen4 .nextButton,
+  #screen5 .nextButton,
+  #screen6 .nextButton,
+  #screen7 .nextButton {
+    position: fixed;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  
   #screen1 {
     position: relative;
     overflow: hidden;
@@ -23,8 +62,7 @@ body {
 }
   
   #screen1 h1,
-  #screen1 p,
-  #screen1 button {
+  #screen1 p {
     position: relative;
     z-index: 1;
   }
@@ -69,7 +107,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  @media (max-width <= 768px) {
+  @media (max-width : 768px) {
     body {
       font-size: 10vw; /* 모바일에서 글자 크기 작게 */
       padding: auto; /* 모바일에서 패딩을 줄여서 화면을 채우도록 */
@@ -89,10 +127,11 @@ body {
     }
 
     .nextButton {
-      font-size: 2.5vw;
+      font-size: 2vw;
       padding: 3vw 5vw;
       width: auto;
       min-width: 80px;
+      
       
     }
   
@@ -139,6 +178,8 @@ body {
     }
     
   }
+
+  
 
   #moodButtons,
   #colorButtons,
