@@ -25,8 +25,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px auto 0 auto;
-    font-size: 16px;
+    margin: 80px auto 0 auto;
+    font-size: 12px;
     width: fit-content;
     position: static;
   }
@@ -39,7 +39,7 @@ body {
   #screen6 .nextButton,
   #screen7 .nextButton {
     position: fixed;
-    top: 500px;
+    top: 550px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -107,6 +107,27 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
+  #screen1 button,
+  #screen2 button,
+  #screen3 button,
+  #screen4 button,
+  #screen5 button,
+  #screen6 button,
+  #screen7 button {
+    width: 60px; /* 가장 긴 글자 기준 너비 */
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  #moodButtons button,
+  #colorButtons button,
+  #valueButtons button,
+  #personalityButtons button {
+    width: 105px; /* 가장 긴 글자 기준 너비 */
+    text-align: center;
+    white-space: nowrap;
+  }
+
   @media (max-width : 768px) {
     body {
       font-size: 10vw; /* 모바일에서 글자 크기 작게 */
@@ -119,55 +140,56 @@ body {
     }
   
     .p1 {
-      font-size: 4vw; /* 모바일에서 p1 텍스트 크기 축소 */
+      font-size: 3.5vw; /* 모바일에서 p1 텍스트 크기 축소 */
     }
   
     .p2 {
-      font-size: 3.5vw; /* 모바일에서 p2 텍스트 크기 축소 */
+      font-size: 4.3vw; /* 모바일에서 p2 텍스트 크기 축소 */
     }
 
+    .progress {
+      font-size: 3vw
+      }
+
     .nextButton {
-      font-size: 3vw;
-      padding: 3vw 5vw;
+      font-size: 3.5vw;
+      padding: 2vw 3vw;
       width: auto;
       min-width: 80px;
       
       
     }
   
-    button {
-      width: auto;
-      padding: 4vw 6vw; /* 버튼 크기 모바일에 맞게 확대 */
-      font-size: 4vw; /* 모바일에서도 버튼 텍스트 크기 비례 조정 */
-      justify-items: center;
-    }
-  
     #moodButtons,
     #colorButtons,
     #valueButtons,
     #personalityButtons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 항상 3칸 */
-    gap: 3vw;
-    justify-content: center; /* 🔥 그리드 전체를 중앙으로 */
-    justify-items: center;   /* 🔥 셀 안의 버튼도 중앙으로 */
-    margin: 5% auto;
-    width: 100%;             /* 🔥 화면 너비 기준으로 */
-    max-width: 600px;        /* 너무 넓어지지 않도록 제한 */
+      grid-template-columns: repeat(3, 1fr); /* ✅ 그대로 유지 */
+      gap: 5vw 0;          
+      justify-content: center;               /* 👉 그리드 전체를 중앙 정렬 */
+      justify-items: center;                  /* 🔧 충분한 간격 */
+      max-width: 95vw;                       /* 🔥 화면 너비에 거의 맞춤 */
+      padding: 0 3vw;
     }
 
-/* 버튼 스타일 */
     #moodButtons button,
     #colorButtons button,
     #valueButtons button,
     #personalityButtons button {
-    font-size: 2.5vw;
-    padding: 3vw;
-    width: 100%;       /* 🔥 그리드 셀 너비에 맞춤 */
-    max-width: 100px;  /* 너무 커지지 않도록 제한 */
-    box-sizing: border-box;
-    text-align: center;
+      font-size: 3.3vw;       /* 🔠 더 보기 좋게 */
+      padding: 2.3vw 3vw;       /* 📦 넉넉한 패딩 */
+      width: 19vw;         /* 🔓 최대 너비 제한 해제 */
+      box-sizing: border-box;
+      text-align: center;
+      white-space: nowrap;
+      margin-right: 6vw; /* 가로 간격을 0으로 설정 */
+      margin-left: 6vw;
+      display: flex;
+      align-items: center; /* 수직 중앙 정렬 */
+      justify-content: center;
     }
+
+    
 
     #userImage {
       width: 80vw;         /* 화면 너비의 80% */
@@ -195,26 +217,7 @@ body {
 
   
 
-  #screen1 button,
-  #screen2 button,
-  #screen3 button,
-  #screen4 button,
-  #screen5 button,
-  #screen6 button,
-  #screen7 button {
-    width: 60px; /* 가장 긴 글자 기준 너비 */
-    text-align: center;
-    white-space: nowrap;
-  }
 
-  #moodButtons button,
-  #colorButtons button,
-  #valueButtons button,
-  #personalityButtons button {
-    width: 105px; /* 가장 긴 글자 기준 너비 */
-    text-align: center;
-    white-space: nowrap;
-  }
 
   
   
